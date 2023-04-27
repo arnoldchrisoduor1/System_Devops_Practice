@@ -1,0 +1,9 @@
+#!/usr/bin/ env bash
+#This script takes ip address as an arguement.
+
+if ["$#" -lt "1"]
+then
+	echo "Usage: pingit {IP_ADDRES}"
+else
+	ping "$1" -c 5
+fi
